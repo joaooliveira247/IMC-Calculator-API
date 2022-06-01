@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "imc-calculator"
+version = "0.1.0"
+description = ""
+authors = ["joaooliveira247 <joaooliveira247@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.78.0"
+uvicorn = "^0.17.6"
+PyPDF2 = "^1.28.4"
+numpy = "^1.22.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+imc = 'imc_calculator.__main__'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
